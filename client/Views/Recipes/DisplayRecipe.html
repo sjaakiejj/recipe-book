@@ -1,0 +1,189 @@
+<template name="DisplayRecipe">
+ <div id='context-menu'>V</div>
+ 
+ <div class="leftpage">
+ <table id="book_page">
+   <!-- TOP --> 
+   <tr id="top">
+   
+   <td id="ingredients">
+     <table id="ingredient_list">
+       {{#each ingredients}}
+         <tr><td>{{amount}}</td><td>{{name}}</td></tr>
+       {{/each}}<!--
+       <tr><td>4 cups</td><td>vegetable stock or water</td></tr>
+       <tr><td>1-2</td>    <td>onions, chopped</td></tr>
+       <tr><td>4</td>      <td>cloves of garlic, minced</td></tr>
+       <tr><td>2</td>      <td>med sized yams, diced</td></tr>
+       <tr><td>2 cup</td>  <td>green kale, chopped</td></tr>
+       <tr><td>1 cup</td>  <td>chickpea, cooked</td></tr>
+       <tr><td>½ cup</td> <td>brown rice, cooked</td></tr>
+       <tr><td>¼ tsp</td> <td>sea salt</td></tr>
+       <tr><td>¼ cup</td> <td>cashew or almond butter</td></tr>
+       <tr><td>2 tbsp</td> <td>lemon juice, freshly squeezed</td></tr>
+       <tr><td>¼ cup</td> <td>tamari</td></tr>
+       <tr><td>1/8 tsp</td><td>chili powder</td></tr>
+       <tr><td>1 tbsp</td> <td>olive oil</td></tr>-->
+     </table>
+   </td>
+   
+   <td id='summary'>
+     <div class='page-shade'>
+       <h1>{{recipe_title}}</h1>
+       <b>Provided by {{recipe_author}}</b>
+       <!--
+      <h1>Warming Chickpea Stew</h1>
+       <b>Provided by Live Lighter</b>
+       <p>To help prepare, I’ve tried this elimination diet friendly, allergen-free, vegetarian and vegan recipe full of protein and great taste. </p>-->
+       </div>
+   </td>
+ </tr>
+ <tr id="bottom">  
+   
+   <!-- BOTTOM:DIRECTIONS -->
+   
+   <td id='directions'>
+     <ol>
+       {{#each directions}}
+          <li>{{direction}}</li>
+       {{/each}}<!--
+       <li>In a large soup pot, sauté onion and garlic in olive oil for 3-5 minutes.</li>
+       <li>Add vegetable stock/water, yam, additional vegetables (not kale), chickpea, brown rice, and sea salt.</li>
+       <li>Bring to a boil, reduce heat, and simmer covered for 30-45 minutes.</li>
+       <li>In a small bowl, mix nut butter with ½ cup liquid from stew.</li>
+       <li>Stir mixture back into stew, along with kale, and cook for 5 minutes.</li>
+       <li>Add lemon juice, tamari, and chili powder and cook for 5 more minutes.</li>-->
+       Serve.
+     </ol>
+   </td>
+   
+   <!-- BOTTOM:IMAGE --> 
+   
+   <td id='image'>
+     <img src='{{recipe_image}}'>
+     <!--<img src='http://livelighter.org/wp-content/uploads/2008/11/chickpea-stew.jpg'>-->
+   </td>
+   
+   </tr>
+</table> 
+</div>
+<div class="rightpage">
+ 
+ <!-- RIGHT PAGE -->
+ <table id="book_page">
+   <!-- TOP --> 
+   <tr id="top">
+   <td id='summary'>
+     <div class='page-shade'>
+      <h1>Warming Chickpea Stew</h1>
+       <b>Provided by Live Lighter</b>
+       <p>To help prepare, I’ve tried this elimination diet friendly, allergen-free, vegetarian and vegan recipe full of protein and great taste. </p>
+      </div>
+   </td>
+   <td id="ingredients">
+     <table id="ingredient_list">
+       <tr><td>4 cups</td><td>vegetable stock or water</td></tr>
+       <tr><td>1-2</td>    <td>onions, chopped</td></tr>
+       <tr><td>4</td>      <td>cloves of garlic, minced</td></tr>
+       <tr><td>2</td>      <td>med sized yams, diced</td></tr>
+       <tr><td>2 cup</td>  <td>green kale, chopped</td></tr>
+       <tr><td>1 cup</td>  <td>chickpea, cooked</td></tr>
+       <tr><td>½ cup</td> <td>brown rice, cooked</td></tr>
+       <tr><td>¼ tsp</td> <td>sea salt</td></tr>
+       <tr><td>¼ cup</td> <td>cashew or almond butter</td></tr>
+       <tr><td>2 tbsp</td> <td>lemon juice, freshly squeezed</td></tr>
+       <tr><td>¼ cup</td> <td>tamari</td></tr>
+       <tr><td>1/8 tsp</td><td>chili powder</td></tr>
+       <tr><td>1 tbsp</td> <td>olive oil</td></tr>
+     </table>
+   </td>
+ </tr>
+ <tr id="bottom">  
+   <!-- BOTTOM:IMAGE --> 
+   
+   <td id='image'>
+     <img src='http://livelighter.org/wp-content/uploads/2008/11/chickpea-stew.jpg'>
+   </td>
+   
+   <!-- BOTTOM:DIRECTIONS -->
+   
+   <td id='directions'>
+     <ol>
+       <li>In a large soup pot, sauté onion and garlic in olive oil for 3-5 minutes.</li>
+       <li>Add vegetable stock/water, yam, additional vegetables (not kale), chickpea, brown rice, and sea salt.</li>
+       <li>Bring to a boil, reduce heat, and simmer covered for 30-45 minutes.</li>
+       <li>In a small bowl, mix nut butter with ½ cup liquid from stew.</li>
+       <li>Stir mixture back into stew, along with kale, and cook for 5 minutes.</li>
+       <li>Add lemon juice, tamari, and chili powder and cook for 5 more minutes.</li>
+       Serve.
+     </ol>
+   </td>
+   </tr>
+</table> 
+</div>
+</template>
+
+
+
+
+
+
+
+
+
+
+
+
+<template name="DisplayRecipeDiv">
+ <div id='context-menu'>V</div>
+ <div id='top'>
+   <div id='summary'>
+      <h1>Warming Chickpea Stew</h1>
+       <b>Provided by Live Lighter</b>
+       <p>To help prepare, I’ve tried this elimination diet friendly, allergen-free, vegetarian and vegan recipe full of protein and great taste. </p>
+   </div>
+   <div id="ingredients">
+     Ingredients:
+     <ul>
+       <li>4 cups vegetable stock or water</li>
+       <li>1-2 onions, chopped</li>
+       <li>4 cloves of garlic, minced</li>
+       <li>2 med sized yams, diced</li>
+       <li>2 cups green kale, chopped</li>
+       <li>1 cup chickpea, cooked</li>
+       <li>½ cup brown rice, cooked</li>
+       <li>¼ tsp sea salt</li>
+       <li>¼ cup cashew or almond butter</li>
+       <li>2 tbsp lemon juice, freshly squeezed</li>
+       <li>¼ cup tamari</li>
+       <li>1/8 tsp chili powder</li>
+       <li>1 tbsp olive oil</li>
+     </ul>
+   </div>
+ </div>
+ <div id='bottom'>
+   
+   <!-- BOTTOM:IMAGE --> 
+   
+   <div id='image'>
+     <img src='http://livelighter.org/wp-content/uploads/2008/11/chickpea-stew.jpg'>
+   </div>
+   
+   <!-- BOTTOM:DIRECTIONS -->
+   
+   <div id='directions'>
+   <p>
+     <b>Directions:</b>
+   </p>
+   <ol>
+     <li>In a large soup pot, sauté onion and garlic in olive oil for 3-5 minutes.</li>
+     <li>Add vegetable stock/water, yam, additional vegetables (not kale), chickpea, brown rice, and sea salt.</li>
+     <li>Bring to a boil, reduce heat, and simmer covered for 30-45 minutes.</li>
+     <li>In a small bowl, mix nut butter with ½ cup liquid from stew.</li>
+     <li>Stir mixture back into stew, along with kale, and cook for 5 minutes.</li>
+     <li>Add lemon juice, tamari, and chili powder and cook for 5 more minutes.</li>
+     Serve.
+   </ol>
+   </div>
+</div> 
+</template>

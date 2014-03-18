@@ -1,0 +1,133 @@
+body { margin:0; }
+  
+  #context-menu {
+    position:absolute;
+    top:0;
+    right:0;
+  }
+  
+  #book_page{
+    margin:0;
+    border-collapse:collapse;
+    width: 100%;
+   }
+  
+  .leftpage{
+   float: left;
+   overflow:auto;
+   box-shadow: inset -50px 0px 100px -50px rgba(0,0,0,0.7);
+   width: 50%;
+  }
+  
+  .rightpage{
+   overflow:auto;
+   float: left;
+   overflow:auto;
+   box-shadow: inset 50px 0px 100px -50px rgba(0,0,0,0.7);
+   width: 50%;
+   }
+  
+  #book_page td
+  {
+    padding:0px;
+  }
+  
+  .rightpage #book_page #image{
+   box-shadow: inset -25px 0px 0 -5px rgba(255,255,255,0.5);
+  }
+  .leftpage #book_page #image{
+   box-shadow: inset 25px 0px 0 -5px rgba(255,255,255,0.5);
+  }
+  
+  #top{
+    width: 100%;
+  }
+  
+  #book_page #summary
+  {   
+    vertical-align:bottom;
+    background:#D2DE6A;
+    padding-right:20px;
+  }
+  
+  .leftpage #book_page #summary
+  {   
+    box-shadow: inset 25px 0px 0 -5px rgba(255,255,255,0.5);
+    padding:0;
+    position:relative;
+  }
+  
+  .rightpage #book_page #summary
+  {   
+    box-shadow: inset -25px 0px 0 -5px rgba(255,255,255,0.5);
+    padding: 0;
+    position:relative;
+  }
+  
+  #top #summary h1{margin:0px; text-transform:uppercase;}
+  
+  #top #ingredients
+  {
+    background: #FBFFD4;
+    width: 50%;
+  }
+  
+  #top #ingredients #ingredient_list td:first-child
+  {
+    text-align: right;
+    box-shadow: none;
+    padding-right:15px;
+  }
+  
+  #bottom
+  {
+     width: 100%;
+     overflow:auto;
+  }
+  #bottom #image
+  {
+     float: left;
+     height: 100%;
+     width:100%;
+     z-index:2;
+  }
+  
+  .leftpage #bottom #image img {
+    width:100%;
+    box-shadow: inset 30px 0px 0 -5px rgba(255,255,255,0.5);
+    z-index:-1;
+    position:relative;
+  }
+  
+  .rightpage #bottom #image img {
+    width:100%;
+    box-shadow: inset -30px 0px 0 -5px rgba(255,255,255,0.5);
+    z-index:-1;
+    position:relative;
+  }
+  
+  .page-shade {
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    margin:0;
+  }
+  
+  .leftpage .page-shade{
+    box-shadow: inset -50px 0px 100px -50px rgba(0,0,0,0.7);
+  }
+  
+  .rightpage .page-shade{
+    box-shadow: inset 50px 0px 100px -50px rgba(0,0,0,0.7);
+  }
+  
+  #bottom #directions{
+    width:50%;
+    vertical-align: top;
+  }
+
+  #bottom #directions li{
+    margin-top:15px;
+  }
